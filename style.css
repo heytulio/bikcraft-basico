@@ -1,0 +1,169 @@
+/*
+	cores:
+	#f7f7f7
+	#c6c6c6
+	#e21
+
+	fonte: arial;
+	paragrafos: 20px;
+	vantagens bikcraft: 64px;
+*/
+
+body{
+	margin: 0px;
+	font-family: Arial, Georgia, serif;
+	background-color: #f7f7f7; 
+}
+
+h1, h2, p, a{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+}
+
+header{
+	display: grid;
+	place-items: center;
+	gap: 3rem;
+	margin-top: 3rem;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+ol{
+	list-style: none;
+}
+
+/*Especs*/
+
+.barra-nav{
+	display: flex;
+	gap: 1rem;
+	place-content: center;
+	flex-wrap: wrap;
+}
+
+li a{
+	background-color: #fff; 
+	padding: 1rem 2rem;
+	color: #000;
+	transition: .3s;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+li a:hover{
+	border: 4px solid #e21;
+	border-radius: 4px;
+}
+
+.content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 1rem;
+	margin: 3rem 1rem 3rem 1rem;
+}
+
+.content-descricao{
+	display: grid;
+	background-color: #fff;
+	text-align: right;
+	place-items: center end;
+	padding: 3rem;
+	position: relative;
+}
+
+.content-descricao h1{
+	font-size: 2.2rem;
+}
+
+.content-descricao p{
+	font-size: 1.2rem;
+}
+
+.content-descricao h1::after{
+	content: "";
+	width: 40px;
+	height: 4px;
+	background-color: #e21;
+	position: absolute;
+	right: -20px;
+	top: 35px;
+}
+
+.button-vm{
+	display: inline-block;
+	background-color: #e21;
+	color:#fff;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
+.button-vm:hover{
+	background-color: #ba190d; 
+}
+
+.subtitle{
+	place-self: center;
+	text-align: right;
+	padding: 2rem;
+	color: #0004;
+	font-size: 4rem;
+}
+
+.content-vantagens-list li:nth-child(odd){
+	background-color: #f7f7f7;
+}
+
+.content-vantagens{
+	background-color: #fff;
+}
+
+.content-vantagens-list{
+	padding: 3rem;
+	align-content: center;
+	justify-content: start;
+}
+
+.content-vantagens-list li:hover{
+	border-left: 4px solid #e21;
+	border-radius: 4px;
+}
+
+.content-vantagens-list li{
+	display: grid;
+	grid-template-columns: auto auto;
+	transition: 0.2s;
+	padding: 2rem 0.5rem; 
+	border-radius: 4px;
+	align-items: center;
+}
+
+.content-vantagens-list li p{
+	grid-column: 2;
+}
+
+.content-vantagens-list li img{
+	grid-column: 1;
+	padding-right: 0.4rem;
+}
+
+.footer{
+	display: flex;
+	background-color: #fff;
+	max-width: 100%;
+	justify-content: center;
+	padding: 2rem;
+}
